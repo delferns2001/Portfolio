@@ -11,6 +11,11 @@
   font-family: "Poppins", sans-serif;
   background-color: darkturquoise;
   padding: 50px 50px;
+  z-index: 1;
+}
+.nav:hover {
+  background-color: grey;
+  transition: 1s;
 }
 
 .nav-logo {
@@ -49,6 +54,7 @@
 
 .nav-links li a:hover {
   color: whitesmoke;
+  transition: 1s;
 }
 
 /*

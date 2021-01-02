@@ -1,0 +1,16 @@
+.about-me-div {
+  height: 200vh;
+  position: relative;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url(img/img6.png);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: underline;
+}
