@@ -1,25 +1,39 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Nav } from "react-bootstrap";
+import { Button, Nav, Form, FormControl, Container } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TopNav from "./Navigation/TopNav";
+
+import AboutMePage from "./Pages/AboutMe";
+import HomePage from "./Pages/HomePage";
+import ContactMePage from "./Pages/ContactMePage";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
-    <div className="App">
-      <Nav>
-        <Nav.Item>
-          <Nav.Link href="/home">Home</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/about-me">About Me</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/project">Project</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/contact-me">Contact Me</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <>
+      <Router>
+        <Container fluid className="h-100 p-0 d-flex flex-column">
+          <TopNav />
+          <Container fluid className="h-100">
+            <Switch>
+              <Route path="/about-me">
+                <AboutMePage />
+              </Route>
+              <Route path="/contact-me">
+                <ContactMePage />
+              </Route>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/">
+                <HomePage />
+              </Route>
+            </Switch>
+          </Container>
+        </Container>
+      </Router>
+    </>
   );
 }
 

@@ -1,10 +1,10 @@
 import Recat from "react";
 import { Button } from "react-bootstrap";
 
-export default function AboutMePage() {
+export default function ContactMePage() {
   return (
     <div>
-      <h1>About Me</h1>
+      <h1>Contact Me Page</h1>
     </div>
   );
 }
