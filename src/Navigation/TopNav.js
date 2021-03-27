@@ -8,16 +8,16 @@ export default function TopNav() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Link to="/" className="nav-link">
+          <Link to="/Portfolio" className="nav-link">
             Home
           </Link>
-          <Link to="/about-me" className="nav-link">
+          <Link to="/Portfolio/about-me" className="nav-link">
             About Me
           </Link>
-          <Link to="/projects" className="nav-link">
+          <Link to="/Portfolio/projects" className="nav-link">
             Projects
           </Link>
-          <Link to="/contact-me" className="nav-link">
+          <Link to="/Portfolio/contact-me" className="nav-link">
             Contact
           </Link>
         </Nav>

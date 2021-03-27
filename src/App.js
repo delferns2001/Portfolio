@@ -17,16 +17,16 @@ function App() {
           <TopNav />
           <Container fluid className="h-100">
             <Switch>
-              <Route path="/about-me">
+              <Route path="/Portfolio/about-me">
                 <AboutMePage />
               </Route>
-              <Route path="/contact-me">
+              <Route path="/Portfolio/contact-me">
                 <ContactMePage />
               </Route>
-              <Route path="/projects">
+              <Route path="/Portfolio/projects">
                 <Projects />
               </Route>
-              <Route path="/">
+              <Route path="/Portfolio">
                 <HomePage />
               </Route>
             </Switch>
