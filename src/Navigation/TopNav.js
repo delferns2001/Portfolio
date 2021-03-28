@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function TopNav() {
   return (
-    <Navbar bg="primary" variant="dark" expand="md" className="shadow-sm">
+    <Navbar bg="primary" variant="dark" expand="md" className="shadow-sm links">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
