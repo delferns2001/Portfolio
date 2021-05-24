@@ -1,38 +1,21 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Nav, Form, FormControl, Container } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import TopNav from "./Navigation/TopNav";
 
-import AboutMePage from "./Pages/AboutMe";
+import PageSwitch from "./Navigation/PageSwitch";
 import HomePage from "./Pages/HomePage";
-import ContactMePage from "./Pages/ContactMePage";
-import Projects from "./Pages/Projects";
+
+// import {} from "react-bootstrap";
 
 function App() {
   return (
     <>
-      <Router>
-        <Container fluid className="h-100 p-0 d-flex flex-column">
-          <TopNav />
-          <Container fluid className="h-100">
-            <Switch>
-              <Route path="/Portfolio/about-me">
-                <AboutMePage />
-              </Route>
-              <Route path="/Portfolio/contact-me">
-                <ContactMePage />
-              </Route>
-              <Route path="/Portfolio/projects">
-                <Projects />
-              </Route>
-              <Route path="/Portfolio">
-                <HomePage />
-              </Route>
-            </Switch>
-          </Container>
-        </Container>
-      </Router>
+      {/* <PageSwitch /> */}
+      {/* <HomePage></HomePage> */}
+      {/* <div className="page-background">
+        <div>
+          <HomePage></HomePage>
+        </div>
+      </div> */}
     </>
   );
 }
