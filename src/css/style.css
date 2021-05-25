@@ -71,12 +71,13 @@ html {
 
 .ptext .border {
   background-color: #111;
-  color: #fff;
+  /* color: #fff; */
   padding: 20px;
 }
 
 .ptext .border.trans {
   background-color: transparent;
+  padding: 0px 0px;
 }
 
 /* @media (max-width: 568px) {
