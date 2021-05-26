@@ -1,13 +1,11 @@
-.page-background {
+/* .page-background {
   background-color: #dcdcdc;
   height: 100vh;
 }
-
 .center {
   height: 90vh;
   width: auto;
   position: relative;
-  /* background-image: url("/logo192.png"); */
 }
 
 .centerMe {
@@ -17,7 +15,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
+
 body,
 html {
   height: 100%;
@@ -27,6 +26,7 @@ html {
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  border: inherit;
 }
 
 .pimg1,
@@ -38,27 +38,27 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
 
-  /* 
+/* 
 
     fixed = Parallex 
     scroll = Normal 
 
     */
-}
 
 .pimg1 {
   background-image: url("../src/img/image1.jpg");
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
 }
 .pimg2 {
-  background-image: url("../src/img/image7.jpg");
+  background-image: url("../src/img/image1.jpg");
   min-height: 400px;
   min-width: 100%;
 }
 .pimg3 {
-  background-image: url("../src/img/image6.jpg");
+  background-image: url("../src/img/image1.jpg");
   min-height: 400px;
   min-width: 100%;
 }
@@ -97,6 +97,9 @@ html {
 
 .ptext .border.trans {
   background-color: transparent;
+  color: transparent;
+  border: 0px !important;
+  /* !important lets you overide the bootstarp border class */
 }
 
 /* @media (max-width: 568px) {
