@@ -27,6 +27,8 @@ html {
   line-height: 1.8em;
   color: #666;
   border: inherit;
+  cursor: url(/src/img/cursor-2.png), auto;
+
 }
 
 .pimg1,
@@ -109,3 +111,4 @@ html {
     background-attachment: scroll;
   }
 } */
+
